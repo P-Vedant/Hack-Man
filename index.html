@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hac-Man</title>
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            height: 100vh;
+            background-image: url('images/computer-back.jpg');
+            margin-bottom: 100px;
+            background-size: 60% 110%; /* Adjusts the background image size to cover the entire body */
+            background-repeat: no-repeat;
+            background-position: center; 
+        }
+        #gameCanvas{
+             box-shadow: 10px 10px 20px rgb(1, 0, 15);
+             background-color: black;
+            width: 800px;
+            height: 500px;
+         margin-top: 70px;
+         margin-bottom: 100px;
+         margin-left: 80px;
+            position: relative; /* Add this line to enable z-index */
+            z-index: 1; /* Add this line to bring the canvas to the front */
+}
+        h1{
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: lightgray;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Hac-Man</h1>
+        <canvas id="gameCanvas"></canvas>
+       
+    </div>
+    <script src="game.js" type="module"></script>
+</body>
+</html>
